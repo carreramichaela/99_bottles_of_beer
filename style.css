@@ -1,0 +1,71 @@
+body {
+    background-image: url(wall.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    text-align: center;
+    margin: 0;
+
+
+
+}
+
+header {
+    background-color: rgba(240, 240, 90, 0.9);
+    padding: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: grid;
+    place-items:center;
+    z-index: 2;
+
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
+@media (max-width: 550px) {
+    h1{
+    font-size: 1.7rem;
+    }
+}
+
+.count {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #D25436;
+    text-shadow: 2px 2px black;
+    line-height: 60%;
+    margin-right: 3px;
+}
+
+main {
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    margin-top: 105px;
+}
+
+.bottle {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bottle:hover {
+    transform: scale(1.1);
+   
+
+}
+
+.bottle.drank {
+    visibility: hidden;
+    opacity: 0;
+ }
